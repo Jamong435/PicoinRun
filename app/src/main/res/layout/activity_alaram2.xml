@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AlaramActivity2"
-    android:background="@drawable/back1">
+    >
 
 
     <TextView
@@ -16,12 +16,12 @@
         android:layout_marginTop="100dp"
         android:textColor="#1B1A1A"
         android:textSize="40dp"
-        android:text="오늘도 수고하셨습니다"
+        android:text="시간이 되었습니다"
         android:fontFamily="@font/bold"/>
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="퇴실을 눌러주세요"
+       android:text="어플로 이동합니다"
        android:textSize="40dp"
        android:layout_marginTop="10dp"
        android:textColor="#FF9800"
@@ -29,13 +29,16 @@
        android:layout_below="@+id/aa"
        android:layout_centerHorizontal="true"/>
 
-    <Button
-        android:layout_marginTop="400dp"
+    <ImageButton
+        android:layout_marginTop="250dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/clickbtn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/imgae1"
+        android:background="@color/black"
         android:onClick="clickbtninstart"
+
         />
 </RelativeLayout>

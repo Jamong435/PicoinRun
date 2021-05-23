@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/back9">
+    >
 
     <TextView
         android:id="@+id/timetitle"
@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/bold"
         android:gravity="center"
-        android:text="퇴실시간설정"
+        android:text="시간설정"
         android:textColor="#E85050"
         android:textSize="55dp" />
     <TextView
@@ -23,7 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/timetitle"
         android:layout_centerHorizontal="true"
-        android:text="*지정시간에 퇴실알람이 뜹니다."/>
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:text="*시간 설정해주시면 자동으로 \n  이동관련 알람이 뜹니다"/>
     <TimePicker
         android:amPmTextColor="#ff6666"
         android:numbersInnerTextColor="#ff6666"
@@ -40,7 +42,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginTop="110dp"
+
         android:onClick="regist"
         android:textSize="25dp"
         android:textColor="#ff6666"
@@ -54,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button"
         android:layout_alignLeft="@id/button"
-        android:text="*해지를 누르시면 ReSet됩니다"/>
+        android:text="*해지를 누르시면 취소됩니다"/>
     <Button
         android:id="@+id/button2"
         android:layout_width="300dp"
@@ -63,6 +65,7 @@
         android:onClick="unregist"
         android:fontFamily="@font/bold"
         android:textSize="25dp"
+        android:textColor="@color/black"
         android:background="@drawable/bg_button_round"
         android:layout_below="@+id/button"
         android:layout_centerInParent="true"
