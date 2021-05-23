@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back9">
+
+    <TextView
+        android:id="@+id/timetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="퇴실시간설정"
+        android:textColor="#E85050"
+        android:textSize="55dp" />
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timetitle"
+        android:layout_centerHorizontal="true"
+        android:text="*지정시간에 퇴실알람이 뜹니다."/>
+    <TimePicker
+        android:amPmTextColor="#ff6666"
+        android:numbersInnerTextColor="#ff6666"
+        android:id="@+id/tp_timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/subtitle"
+        android:timePickerMode="spinner"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="110dp"
+        android:onClick="regist"
+        android:textSize="25dp"
+        android:textColor="#ff6666"
+        android:fontFamily="@font/bold"
+        android:layout_below="@+id/tp_timepicker"
+        android:background="@drawable/bg_button_round"
+        android:text="등록"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@id/button"
+        android:text="*해지를 누르시면 ReSet됩니다"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="unregist"
+        android:fontFamily="@font/bold"
+        android:textSize="25dp"
+        android:background="@drawable/bg_button_round"
+        android:layout_below="@+id/button"
+        android:layout_centerInParent="true"
+        android:text="해지"
+        />
+
+</RelativeLayout>
