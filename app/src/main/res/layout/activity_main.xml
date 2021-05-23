@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="30dp"
         android:textSize="20dp"
-        android:text="*시간 설정해주시면 자동으로 \n  이동관련 알람이 뜹니다"/>
+        android:text="*시간 설정해주시면 매일 자동으로 \n  알람이 뜹니다"/>
     <TimePicker
         android:amPmTextColor="#ff6666"
         android:numbersInnerTextColor="#ff6666"
@@ -71,5 +71,15 @@
         android:layout_centerInParent="true"
         android:text="해지"
         />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3032504580461279/8901823038"/>
 
 </RelativeLayout>

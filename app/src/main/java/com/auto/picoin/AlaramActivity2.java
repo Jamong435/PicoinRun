@@ -41,4 +41,9 @@ public class AlaramActivity2 extends AppCompatActivity {
     public void clickbtninstart(View view) {
         AlaramActivity2.this.startActivity(intent);
     }
+
+    public void clickbtn(View view) {
+        Intent intent2 = new Intent(this,MainActivity.class);
+        startActivity(intent2);
+    }
 }
