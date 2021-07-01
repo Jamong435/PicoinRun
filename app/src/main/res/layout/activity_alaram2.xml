@@ -32,7 +32,7 @@
        android:text="어플로 이동합니다"
        android:textSize="40dp"
        android:layout_marginTop="10dp"
-       android:textColor="#FF9800"
+       android:textColor="#005666"
        android:fontFamily="@font/bold"
        android:layout_below="@+id/aa"
        android:layout_centerHorizontal="true"/>
