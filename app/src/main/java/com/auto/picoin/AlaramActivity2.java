@@ -25,7 +25,7 @@ public class AlaramActivity2 extends AppCompatActivity {
 
         AdView adView = new AdView(this);
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3032504580461279/5028713559");
+        
 
         intent = this.getPackageManager().getLaunchIntentForPackage(packageNames);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
